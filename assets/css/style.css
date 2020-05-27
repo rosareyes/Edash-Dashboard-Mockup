@@ -786,7 +786,7 @@ input.is-invalid {
 }
 
 .selector-holder span {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 /* Colors of the buttons*/
@@ -863,6 +863,6 @@ font-size: 10px;
 
   @media (max-width: 320px) {
     .selector-holder span {
-      font-size: 0.6rem;
+      font-size: 0.5rem;
     }
   }
