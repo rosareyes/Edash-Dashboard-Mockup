@@ -23,11 +23,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion text-right d-none d-md-block" id="accordionSidebar">
       <!-- Sidebar - Brand -->
       <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-sm-inline d-lg-none">
-        <button class="rounded-circle border-0" id="sidebarToggle"> <i class="fa fa-bars"></i> </button>
-      </div>
-
-      <div class="justify-content-end d-none d-md-block">
+      <div class="justify-content-end d-none d-lg-block">
         <a class="sidebar-brand d-flex align-items-center justify-content-end pr-5" href="index.html">
           <div class="sidebar-brand-icon">
             <img src="assets/images/logo_sidebar.png" width="136px" alt="">
@@ -35,75 +31,83 @@
         </a>
         <img class="" src="assets/images/divider.png" width="90%" alt="">
       </div>
-      <div class="mt-md-4">
+      <div class="mt-lg-4 mt-3">
         <!-- Nav Item  -->
         <li class="nav-item active">
           <a class="nav-link" href="index.html">
+            <i class="fas sidebar__icon fa-university d-lg-none"></i>
             <span class="">Revenues</span>
-            <i class="fas fa-university d-md-none"></i></a>
+            </a>
 
         </li>
         <!-- Nav Item -->
         <li class="nav-item">
           <a class="nav-link" href="">
-            <span class="">Gross Profit MMAs</span>
-            <i class="fas fa-chart-line d-md-none"></i></a>
+            <i class="fas sidebar__icon fa-chart-line d-lg-none"></i>
+          <span class="">Gross Profit MMAs</span></a>
+        </li>
+        <!-- Nav Item -->
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <i class="fas sidebar__icon fa-laptop d-lg-none"></i>
+          <span class="">Total Web Sessions</span></a>
         </li>
         <!-- Nav Item -->
         <li class="nav-item">
           <a class="nav-link" href="">
 
-            <span class="">Total Web Sessions</span>
-            <i class="fas fa-laptop d-md-none"></i></a>
+            <i class="fas sidebar__icon  fa-chart-bar d-lg-none"></i>
+            <span class="sidebar__text">Web Sales</span></a>
         </li>
         <!-- Nav Item -->
         <li class="nav-item">
           <a class="nav-link" href="">
-            <span class="">Web Sales</span>
-            <i class="fas fa-chart-bar d-md-none"></i></a>
+
+            <i class="far sidebar__icon fa-clock d-lg-none"></i>
+          <span class="">Avg Order Sizes</span></a>
         </li>
         <!-- Nav Item -->
         <li class="nav-item">
           <a class="nav-link" href="">
-            <span class="">Avg Order Sizes</span>
-            <i class="far fa-clock d-md-none"></i></a>
+
+            <i class=" sidebar__icon far fa-file-alt d-lg-none"></i>
+            <span class="">New Customer Sales Orders</span></a>
         </li>
         <!-- Nav Item -->
         <li class="nav-item">
           <a class="nav-link" href="">
-            <span class="">New Customer Sales Orders</span>
-            <i class="fas fa-user-plus d-md-none"></i></a>
+
+            <i class="fas sidebar__icon  fa-cart-plus d-lg-none"></i>
+          <span class="">Sales Orders Counts</span></a>
         </li>
         <!-- Nav Item -->
         <li class="nav-item">
           <a class="nav-link" href="">
-            <span class="">Sales Orders Counts</span>
-            <i class="fas fa-cart-plus d-md-none"></i></a>
+
+            <i class="fas sidebar__icon fa-desktop d-lg-none"></i>
+            <span class="">Visitor Web Sessions</span></a>
         </li>
         <!-- Nav Item -->
         <li class="nav-item">
           <a class="nav-link" href="">
-            <span class="">Visitor Web Sessions</span>
-            <i class="fas fa-desktop d-md-none"></i></a>
-        </li>
-        <!-- Nav Item -->
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <span class="">Web Forms Submissions</span>
-            <i class="fab fa-wpforms d-md-none"></i></a>
+
+            <i class="fab sidebar__icon fa-wpforms d-lg-none"></i>
+            <span class="">Web Forms Submissions</span></a>
         </li>
         <div class="settings">
           <!-- Nav Item -->
           <li class="nav-item">
             <a class="nav-link" href="">
-              <span class="d-none d-md-inline">Settings</span>
-              <i class="fas fa-cog"></i></a>
+
+              <i class="fas fa-cog"></i>
+              <span class="d-none d-md-inline">Settings</span></a>
           </li>
           <!-- Nav Item -->
           <li class="nav-item">
             <a class="nav-link" href="">
-              <span class="d-none d-md-inline">Log Out</span>
-              <i class="fas fa-sign-out-alt"></i></a>
+
+              <i class="fas fa-sign-out-alt"></i>
+            <span class="d-none d-md-inline">Log Out</span></a>
           </li>
         </div>
       </div>
@@ -134,7 +138,7 @@
           <li><a href="#"><i class="fas fa-laptop fa-li"></i>Total web Sessions</a></li>
           <li><a href="#"><i class="fas fa-desktop fa-li"></i>Visitor Web Sessions</a></li>
           <li><i class="fas fa-chart-line fa-li"></i><a href="#">Gross Profit MMAs</a></li>
-          <li><i class="fas fa-user-plus fa-li"></i><a href="#">New Customer Sales Order Counts</li>
+          <li><i class="far fa-file-alt fa-li"></i><a href="#">New Customer Sales Order Counts</li>
           <li><a href="#"><i class="fas fa-cart-plus fa-li"></i>Sales Orders Counts</a></li>
           <li><a href="#"><i class="fab fa-wpforms fa-li"></i>Web Forms Submissions</a></li>
           <li><a href="#"><i class="fas fa-sign-out-alt fa-li"></i>Help</a></li>

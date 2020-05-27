@@ -24,6 +24,7 @@ body {
   background-color: #f8f9fc;
   width: 100%;
   overflow-x: hidden;
+  padding: 10px;
 }
 
 #wrapper .content-wrapper .content {
@@ -559,7 +560,7 @@ body {
 }
 
 .sidebar-dark .nav-item .nav-link i {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
@@ -583,20 +584,10 @@ body {
 }
 
 .sidebar-dark #sidebarToggle {
-  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
-.sidebar-dark #sidebarToggle::after {
-  color: rgba(255, 255, 255, 0.5);
-}
 
-.sidebar-dark #sidebarToggle:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.sidebar-dark.toggled #sidebarToggle::after {
-  color: rgba(255, 255, 255, 0.5);
-}
 
 .chart {
   box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.2);
@@ -795,7 +786,7 @@ input.is-invalid {
 }
 
 .selector-holder span {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 /* Colors of the buttons*/
@@ -855,4 +846,23 @@ font-size: 10px;
 
   .footer__icon {
     font-size: 28px;
+  }
+
+  .sidebar__icon {
+    font-size: 22px;
+  }
+
+  @media (min-width: 768px) {
+    #page-more {
+      display: none;
+    }
+    .content-wrapper {
+      display: block;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .selector-holder span {
+      font-size: 0.6rem;
+    }
   }
