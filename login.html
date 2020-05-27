@@ -36,7 +36,10 @@
           </div>
           <div class="form-group has-danger">
             <label class="mb-0">Password</label>
-            <input type="password" class="form-control" placeholder="password" required="required">
+            <input type="password" class="form-control" placeholder="password" required="required" id="loginPassword">
+            <div class="invalid-feedback">
+              Unable to log in. Please check your password and try again.
+            </div>
           </div>
           <div class="checkbox d-flex align-items-center">
             <input type="checkbox" class="mt-0">
@@ -45,7 +48,7 @@
 
           <div class="form-group d-flex justify-content-between mt-5">
             <a href="register.html" class="btn btn-lg  btn-outline-edash">Sign Up</a>
-            <button type="submit" class="btn btn-lg btn-edash">Log in</button>
+            <button type="submit" class="btn btn-lg btn-edash" id="btnLogin">Log in</button>
           </div>
           <div class="clearfix login-links">
             <a href="forgot_password.html" class="d-block pb-2">Forgot your password?</a>

@@ -734,3 +734,12 @@ line-height: 1.5;
 
   }
 }
+
+input.is-invalid {
+  background-color: rgb(255,0,0,0.2);
+  border-width: 2px;
+}
+
+.invalid-feedback {
+  font-size: 12px;
+}

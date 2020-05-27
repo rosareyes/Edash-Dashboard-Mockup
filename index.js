@@ -1,29 +1,20 @@
-    function Validate() {
-        var password = $("password1").value;
-        var confirmPassword = $("password2").value;
-        if (password != confirmPassword) {
-            $("#password2").removeClass("is-valid").addClass("is-invalid");
-        }
-        $("#password2").removeClass("is-invalid").addClass("is-valid");
-    }
 
+$(document).ready(function() {
 
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
+  $("#btnSubmit").click(function () {
+      var password = $("#password1").val();
+      var confirmPassword = $("#password2").val();
+      if (password != confirmPassword) {
+          $("#password2").removeClass("is-valid").addClass("is-invalid");
+          return false;
+      }
+      $("#password2").removeClass("is-invalid").addClass("is-valid");
+      return true;
+  });
 
-        // The data for our dataset
-        data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: '#2F80ED',
-                borderColor: '#2F80ED',
-                data: [0, 10, 5, 2, 20, 30, 45]
-            }]
-        },
+  $("#btnLogin").click(function () {
+      $("#loginPassword").removeClass("is-valid").addClass("is-invalid");
+      return false;
+  });
 
-        // Configuration options go here
-        options: {}
-    });
+});

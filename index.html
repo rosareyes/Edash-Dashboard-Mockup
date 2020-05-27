@@ -121,17 +121,34 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var chart = new Chart(ctx, {
+          // The type of chart we want to create
+          type: 'line',
+
+          // The data for our dataset
+          data: {
+              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+              datasets: [{
+                  label: 'My First dataset',
+                  backgroundColor: '#2F80ED',
+                  borderColor: '#2F80ED',
+                  data: [0, 10, 5, 2, 20, 30, 45]
+              }]
+          },
+
+          // Configuration options go here
+          options: {}
+      });
+      });
+    </script>
   </body>
 </html>
