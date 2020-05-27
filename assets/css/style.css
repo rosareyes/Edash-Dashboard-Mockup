@@ -348,16 +348,15 @@ body {
 }
 
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 .sidebar.toggled {
     overflow: visible;
     width: 6.5rem!important;
 }
-
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .sidebar {
     width: 14rem !important;
   }
