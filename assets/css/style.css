@@ -806,3 +806,53 @@ input.is-invalid {
 .button-inactive {
   color: #ACCCF8;
 }
+
+.page-more__heading {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.page-more__heading h2 {
+font-family: 'Montserrat',sans-serif;
+font-weight: bold;
+font-size: 1.5rem;
+color: #4F4F4F;
+}
+#page-more hr {
+   border-top:  1px solid #828282;
+
+  }
+
+  #page-more ul {
+    list-style: none;
+  }
+
+  #page-more ul a {
+    color: #828282;
+
+  }
+  #page-more ul li {
+    letter-spacing: 0.005em;
+text-transform: capitalize;
+font-size: 1rem;
+margin-bottom: 1rem;
+
+  }
+
+  .page-more__links i{
+    color: #5999F1;
+    margin-right: 2rem;
+  }
+
+  .links__bottom-links {
+    position: absolute;
+    bottom: 100px;
+  }
+
+  .footer__button {
+font-size: 10px;
+  }
+
+  .footer__icon {
+    font-size: 28px;
+  }
