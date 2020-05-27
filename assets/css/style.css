@@ -186,21 +186,6 @@ body {
   color: #3a3b45;
 }
 
-@media (min-width: 576px) {
-  .topbar .dropdown {
-    position: relative;
-  }
-  .topbar .dropdown .dropdown-menu {
-    width: auto;
-    right: 0;
-  }
-  .topbar .dropdown-list {
-    width: 20rem !important;
-  }
-  .topbar .dropdown-list .dropdown-item .text-truncate {
-    max-width: 13.375rem;
-  }
-}
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
   color: #d1d3e2;
@@ -361,6 +346,16 @@ body {
   font-weight: 800;
   font-size: 0.65rem;
 }
+
+
+@media (min-width: 576px) {
+.sidebar.toggled {
+    overflow: visible;
+    width: 6.5rem!important;
+}
+
+}
+
 
 @media (min-width: 768px) {
   .sidebar {
