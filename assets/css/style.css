@@ -726,6 +726,9 @@ line-height: 1.5;
     padding: 4rem 1rem 5rem;
       margin-top: 10%;
   }
+  .forgot-password-form.login-form form {
+      padding: 4rem 1rem 5rem;
+  }
   .login-form {
     width: 100%;
   }
