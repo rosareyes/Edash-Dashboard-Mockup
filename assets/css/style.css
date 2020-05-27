@@ -5,7 +5,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
 body {
   margin: 0;
   font-size: 1rem;
@@ -32,9 +31,9 @@ body {
 }
 
 .bg-gradient-primary {
-    background-color: #2F80ED;
-    background-image: linear-gradient(180deg,#2F80ED 10%,#224abe 100%);
-    background-size: cover;
+  background-color: #2F80ED;
+  background-image: linear-gradient(180deg, #2F80ED 10%, #224abe 100%);
+  background-size: cover;
 }
 
 ..sidebar .nav-item.dropdown .dropdown-toggle::after,
@@ -186,7 +185,6 @@ body {
   color: #3a3b45;
 }
 
-
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
   color: #d1d3e2;
 }
@@ -206,7 +204,6 @@ body {
 
 .sidebar .nav-item {
   position: relative;
-
 }
 
 .sidebar .nav-item:last-child {
@@ -299,8 +296,6 @@ body {
   cursor: pointer;
 }
 
-
-
 .sidebar #sidebarToggle:hover {
   text-decoration: none;
 }
@@ -313,8 +308,6 @@ body {
   width: 0 !important;
   overflow: hidden;
 }
-
-
 
 .sidebar .sidebar-brand {
   height: 4.375rem;
@@ -347,19 +340,18 @@ body {
   font-size: 0.65rem;
 }
 
-
 @media (min-width: 768px) {
-.sidebar.toggled {
+  .sidebar.toggled {
     overflow: visible;
-    width: 6.5rem!important;
+    width: 6.5rem !important;
+  }
 }
-}
-
 
 @media (min-width: 992px) {
   .sidebar {
     width: 14rem !important;
   }
+
   .sidebar .nav-item .collapse {
     position: relative;
     left: 0;
@@ -368,34 +360,40 @@ body {
     -webkit-animation: none;
     animation: none;
   }
+
   .sidebar .nav-item .collapse .collapse-inner {
     border-radius: 0;
     box-shadow: none;
   }
+
   .sidebar .nav-item .collapsing {
     display: block;
     transition: height 0.15s ease;
   }
+
   .sidebar .nav-item .collapse,
   .sidebar .nav-item .collapsing {
     margin: 0 1rem;
   }
-  .sidebar .nav-item .nav-link {
 
+  .sidebar .nav-item .nav-link {
     display: block;
     width: 100%;
     text-align: right;
     padding: 1rem 2rem;
     width: 14rem;
   }
+
   .sidebar .nav-item .nav-link i {
     font-size: 0.85rem;
     margin-right: 0.25rem;
   }
+
   .sidebar .nav-item .nav-link span {
     font-size: 0.85rem;
     display: inline;
   }
+
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
     width: 1rem;
     text-align: center;
@@ -406,22 +404,28 @@ body {
     content: '\f107';
     font-family: 'Font Awesome 5 Free';
   }
+
   .sidebar .nav-item .nav-link[data-toggle="collapse"].collapsed::after {
     content: '\f105';
   }
+
   .sidebar .sidebar-brand .sidebar-brand-icon i {
     font-size: 2rem;
   }
+
   .sidebar .sidebar-brand .sidebar-brand-text {
     display: inline;
   }
+
   .sidebar .sidebar-heading {
     text-align: left;
   }
+
   .sidebar.toggled {
     overflow: visible;
     width: 6.5rem !important;
   }
+
   .sidebar.toggled .nav-item .collapse {
     position: absolute;
     left: calc(6.5rem + 1.5rem / 2);
@@ -434,42 +438,53 @@ body {
     -webkit-animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
     animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
   }
+
   .sidebar.toggled .nav-item .collapse .collapse-inner {
     box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
     border-radius: 0.35rem;
   }
+
   .sidebar.toggled .nav-item .collapsing {
     display: none;
     transition: none;
   }
+
   .sidebar.toggled .nav-item .collapse,
   .sidebar.toggled .nav-item .collapsing {
     margin: 0;
   }
+
   .sidebar.toggled .nav-item:last-child {
     margin-bottom: 1rem;
   }
+
   .sidebar.toggled .nav-item .nav-link {
     text-align: center;
     padding: 0.75rem 1rem;
     width: 6.5rem;
   }
+
   .sidebar.toggled .nav-item .nav-link span {
     font-size: 0.65rem;
     display: block;
   }
+
   .sidebar.toggled .nav-item .nav-link i {
     margin-right: 0;
   }
+
   .sidebar.toggled .nav-item .nav-link[data-toggle="collapse"]::after {
     display: none;
   }
+
   .sidebar.toggled .sidebar-brand .sidebar-brand-icon i {
     font-size: 2rem;
   }
+
   .sidebar.toggled .sidebar-brand .sidebar-brand-text {
     display: none;
   }
+
   .sidebar.toggled .sidebar-heading {
     text-align: center;
   }
@@ -581,4 +596,141 @@ body {
 
 .sidebar-dark.toggled #sidebarToggle::after {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.chart {
+  box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.2);
+  background-color: #fff;
+}
+
+.login-form {
+  width: 30rem;
+
+}
+
+.login-form form {
+  margin-top: 20%;
+  margin-bottom: 15px;
+  box-shadow: 0px 10px 16px rgba(79, 79, 79, 0.1);
+  border-radius: 18px;
+  padding: 4rem 4.2rem 6rem;
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+}
+
+.login-form h3 {
+  font-size: 2rem;
+  margin: 0 0 15px;
+  color: #2F80ED;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.form-control, .btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+
+.login-form input {
+  opacity: 0.3;
+  border: 1px solid #5999F1;
+  border-radius: 4px;
+}
+
+.login-form .form-group label {
+  color: #ACCCF8;
+  font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+}
+
+.login-form .checkbox {
+font-size: 0.8rem;
+
+}
+
+
+.btn {
+padding: 0.66rem 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+font-size: 14px;
+font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
+}
+
+.btn-edash {
+  color: #fff;
+  background-color: #2F80ED;
+  border-color: #2F80ED;
+  border-radius: 31px;
+}
+.btn-edash:hover {
+  background-color: #2373de;
+  border-color: #2373de;
+}
+
+.btn-outline-edash:hover {
+    color: #fff;
+    background-color: #2F80ED;
+    border-color: #2F80ED;
+}
+.btn-outline-edash {
+  border-radius: 31px;
+    color: #2F80ED;
+    background-color: transparent;
+    background-image: none;
+    border-color: #2F80ED;
+}
+.header {
+  margin: 1rem 0;
+}
+
+.form-section {
+  background: rgba(47, 128, 237, 0.03);
+}
+
+.login-links {
+  font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 1.5;
+
+}
+
+.login-links a {
+  color: #2F80ED;
+}
+
+.login-form hr {
+  border: 1px solid #ACCCF8;
+  margin-top: 0;
+}
+
+.forgot-password-form.login-form form {
+    padding: 4rem 3.5rem 6rem;
+}
+
+.btn-edash.btn-edash--forgot-password {
+  font-size: 1.5rem;
+
+
+  font-style: normal;
+  font-size: 14px;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .login-form form {
+    padding: 4rem 1rem 5rem;
+      margin-top: 10%;
+  }
+  .login-form {
+    width: 100%;
+  }
+  .login-form h3 {
+    font-size: 1.5rem;
+
+  }
 }
