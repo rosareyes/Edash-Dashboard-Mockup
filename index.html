@@ -118,8 +118,11 @@
     </ul>
     <!-- End of Sidebar -->
     <div class="content-wrapper " id="page-content">
-      <div class="content">
-        <div class="container mt-5 chart">
+      <div class=" container mt-5 ">
+        <div class="dashboard__date-picker d-flex  justify-content-end ">
+          <input class="form-control text-right " type="text" name="daterange" value="01/01/2020 - 01/15/2020" />
+        </div>
+        <div class="chart">
           <canvas id="myChart"></canvas>
         </div>
       </div>
@@ -198,7 +201,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="index.js" charset="utf-8"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<script src="index.js" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).ready(function() {
 
@@ -222,6 +229,56 @@
         options: {}
       });
     });
+  </script>
+
+  <script>
+  $(function() {
+    $('input[name="daterange"]').daterangepicker({
+      "locale": {
+        "format": "MMMM D, YYYY",
+        "separator": " - ",
+        "applyLabel": "Apply",
+        "cancelLabel": "Cancel",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "customRangeLabel": "Custom",
+        "weekLabel": "W",
+        "daysOfWeek": [
+            "Su",
+            "Mo",
+            "Tu",
+            "We",
+            "Th",
+            "Fr",
+            "Sa"
+        ],
+        "monthNames": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+        "firstDay": 1
+    },
+    "startDate": "janu 28, 2020",
+    "endDate": "janu 29, 2020",
+     "applyButtonClasses": "btn-primary",
+      "buttonClasses": "btn btn-primary",
+      "cancelClass": "btn-outline-primary",
+     "opens": "left"
+
+    }, function(start, end, label) {
+      console.log("A new date selection was made: " + start.format('MMMM D, YYYY') + ' to ' + end.format('MMMM D, YYYY'));
+    });
+  });
   </script>
 </body>
 
