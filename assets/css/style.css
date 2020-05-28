@@ -622,3 +622,9 @@ input.is-invalid {
   color: #2F80ED;
   background-color: #fff;
 }
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #2F80ED;
+    border-color: transparent;
+    color: #fff;
+}
