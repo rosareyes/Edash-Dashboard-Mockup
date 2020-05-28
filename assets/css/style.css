@@ -798,6 +798,7 @@ input.is-invalid {
   background-color: #2F80ED !important;
   width: 20%;
   margin-left: 0;
+  -webkit-appearance: none;
 
 }
 
