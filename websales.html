@@ -53,7 +53,7 @@
           <span class="">Total Web Sessions</span></a>
         </li>
         <!-- Nav Item -->
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="">
 
             <i class="fas sidebar__icon  fa-chart-bar d-lg-none"></i>
@@ -98,29 +98,25 @@
           <!-- Nav Item -->
           <li class="nav-item">
             <a class="nav-link" href="">
-              <i class="ml-lg-3 far fa-question-circle sidebar__icon d-lg-none"></i>
-              <span class="">Help</span> <i class="ml-lg-3 far fa-question-circle sidebar__icon d-lg-inline d-none"></i></a>
+
+              <i class="fas fa-cog"></i>
+              <span class="d-none d-md-inline">Settings</span></a>
           </li>
           <!-- Nav Item -->
           <li class="nav-item">
             <a class="nav-link" href="">
-              <i class="ml-lg-3 fas fa-cog sidebar__icon d-lg-none"></i>
-              <span class="">Settings</span> <i class="ml-lg-3 fas fa-cog sidebar__icon d-lg-inline d-none"></i></a>
-          </li>
-          <!-- Nav Item -->
-          <li class="nav-item">
-            <a class="nav-link" href="">
-              <i class="ml-lg-3 fas fa-sign-out-alt d-lg-none sidebar__icon"></i>
-            <span class="">Log Out</span><i class="ml-lg-3 fas fa-sign-out-alt d-lg-inline d-none"></i></a>
+
+              <i class="fas fa-sign-out-alt"></i>
+            <span class="d-none d-md-inline">Log Out</span></a>
           </li>
         </div>
       </div>
     </ul>
     <!-- End of Sidebar -->
-    <div class="content-wrapper " id="page-content">
+    <div class="content-wrapper active-bottom" id="page-content">
       <div class="content">
         <div class="container mt-5 chart">
-          <canvas id="myChart"></canvas>
+         <h3>test</h3>
         </div>
       </div>
     </div>
@@ -145,7 +141,7 @@
           <li><i class="far fa-file-alt fa-li"></i><a href="#">New Customer Sales Order Counts</li>
           <li><a href="#"><i class="fas fa-cart-plus fa-li"></i>Sales Orders Counts</a></li>
           <li><a href="#"><i class="fab fa-wpforms fa-li"></i>Web Forms Submissions</a></li>
-          <li><a href="#"><i class="far fa-question-circle fa-li"></i>Help</a></li>
+          <li><a href="#"><i class="fas fa-sign-out-alt fa-li"></i>Help</a></li>
           <li><a href="#"><i class="fas fa-cog fa-li"></i>Settings</a></li>
           <li><a href="#"><i class="fas fa-sign-out-alt fa-li"></i>Log Out</a></li>
         </ul>
@@ -158,33 +154,31 @@
   <!-- Bottom Nav Bar -->
   <footer class="footer d-block d-md-none">
     <div id="buttonGroup" class="btn-group selectors" role="group">
-      <a id="" type="button" class="btn btn-secondary button-active" href="">
+      <a id="" type="button" class="btn btn-secondary button-inactive" href="index.html">
         <div class="selector-holder">
           <i class="fas fa-university footer__icon"></i>
           <span class="footer__button">Revenues</span>
         </div>
       </a>
-
-      <a id="" type="button" class="btn btn-secondary button-inactive" href="websales.html">
+      <a id="active-selector" type="button" class="btn btn-secondary button-active" href="">
         <div class="selector-holder">
           <i class="fas fa-chart-bar footer__icon"></i>
           <span class="footer__button">WebSales</span>
         </div>
       </a>
-
       <a id="" type="button" class="btn btn-secondary button-inactive" href="">
         <div class="selector-holder">
           <i class="far fa-clock footer__icon"></i>
           <span class="footer__button">Avg Orders</span>
         </div>
       </a>
-      <a id="active-selector" type="button" class="btn btn-secondary button-inactive" href="">
+      <a id="" type="button" class="btn btn-secondary button-inactive" href="">
         <div class="selector-holder">
           <i class="fas fa-laptop footer__icon"></i>
           <span class="footer__button">WebSessions</span>
         </div>
       </a>
-      <button id="more" type="button" class="btn btn-secondary button-inactive">
+      <button id="more" type="button" class="btn btn-secondary button-inactive" href="">
         <div class="selector-holder">
           <i class="fas fa-bars footer__icon"></i>
           <span class="footer__button">More</span>

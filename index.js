@@ -19,50 +19,70 @@ $(document).ready(function() {
 
 });
 
-//Global variable for starting page
-var currentPageId = "page-revenues";
-var currentSelectorId = "revenues";
+$("#more").click(function () {
 
-//Function for getting the button ids
-function getButtons(){
-    //List of button ids
-    var list = ["revenues", "webSales", "orders", "webSessions", "more"];
-    return list;
-}
 
-//Make sure the window is loaded before we add listeners
-window.onload = function(){
-    var pageIdList = getButtons();
-    //Add an event listener to each button
-    pageIdList.forEach(function(page){
-        document.getElementById(page).addEventListener("click", changePage, false);
-    });
-}
+  if ($("#page-more").hasClass("active")) {
+    $("#page-more").removeClass("active");
+    $("#page-more").addClass("inactive");
+    $("#page-content").removeClass("inactive");
+    $("#page-content").addClass("active");
+  } else if ($("#page-more").hasClass("inactive")) {
 
-function changePage(){
-    var currentSelector = document.getElementById(currentSelectorId);
-    var currentPage = document.getElementById(currentPageId);
-    var pageId = "page-"+this.id;
-    var page = document.getElementById(pageId);
-    var pageSelector = document.getElementById(this.id);
+    $("#page-more").removeClass("inactive");
+    $("#page-more").addClass("active");
+    $("#page-content").removeClass("active");
+    $("#page-content").addClass("inactive");
 
-    if(page.classList.contains("active")){
-        return;
-    }
-    currentSelector.classList.remove("button-active");
-    currentSelector.classList.add("button-inactive");
-    currentPage.classList.remove("active");
-    currentPage.classList.add("inactive");
+  }
 
-    pageSelector.classList.remove("button-inactive");
-    pageSelector.classList.add("button-active");
 
-    page.classList.remove("inactive");
-    page.classList.add("active");
+});
 
-    //Need to reset the scroll
-    window.scrollTo(0,0);
-
-    currentSelectorId = this.id;
-    currentPageId = pageId;
-}
+// //Global variable for starting page
+// var currentPageId = "page-active-selector";
+// var currentSelectorId = "active-selector";
+//
+// //Function for getting the button ids
+// function getButtons(){
+//     //List of button ids
+//     var list = ["active-selector", "more"];
+//     return list;
+// }
+//
+// //Make sure the window is loaded before we add listeners
+// window.onload = function(){
+//     var pageIdList = getButtons();
+//     //Add an event listener to each button
+//     pageIdList.forEach(function(page){
+//         document.getElementById(page).addEventListener("click", changePage, false);
+//     });
+// }
+//
+// function changePage(){
+//     var currentSelector = document.getElementById(currentSelectorId);
+//     var currentPage = document.getElementById(currentPageId);
+//     var pageId = "page-"+this.id;
+//     var page = document.getElementById(pageId);
+//     var pageSelector = document.getElementById(this.id);
+//
+//     if(page.classList.contains("active")){
+//         return;
+//     }
+//     currentSelector.classList.remove("button-active");
+//     currentSelector.classList.add("button-inactive");
+//     currentPage.classList.remove("active");
+//     currentPage.classList.add("inactive");
+//
+//     pageSelector.classList.remove("button-inactive");
+//     pageSelector.classList.add("button-active");
+//
+//     page.classList.remove("inactive");
+//     page.classList.add("active");
+//
+//     //Need to reset the scroll
+//     window.scrollTo(0,0);
+//
+//     currentSelectorId = this.id;
+//     currentPageId = pageId;
+// }

@@ -758,25 +758,19 @@ input.is-invalid {
   width: 100%;
 }
 
-.selectors button {
-  border: 0;
-  border-radius: 0;
-  background-color: #2F80ED !important;
-  width: 20%;
-  margin-left: 0;
-}
 
-.selectors button:active {
+
+.selectors a:active {
   border: 0;
 }
 
-.selectors button:focus {
+.selectors a:focus {
   border: 0;
   outline: 0;
   box-shadow: 0 0 0 0px;
 }
 
-.active, .selector-holder {
+.active-bottom, .selector-holder {
   display: flex;
   flex-direction: column;
 }
@@ -789,13 +783,22 @@ input.is-invalid {
   font-size: 0.6rem;
 }
 
-/* Colors of the buttons*/
-.button-active, .selectors button:hover, .selectors button:active, .selectors button:focus {
-  color: #fff;
+
+.button-active, .selectors a:hover, .selectors a:active, .selectors a:focus {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .button-inactive {
-  color: #ACCCF8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.selectors a, .selectors button {
+  border: 0;
+  border-radius: 0;
+  background-color: #2F80ED !important;
+  width: 20%;
+  margin-left: 0;
+
 }
 
 .page-more__heading {
@@ -849,7 +852,7 @@ font-size: 10px;
   }
 
   .sidebar__icon {
-    font-size: 22px;
+    font-size: 28px;
   }
 
   @media (min-width: 768px) {
@@ -866,3 +869,21 @@ font-size: 10px;
       font-size: 0.5rem;
     }
   }
+
+  .settings span i.fas {
+    color: #fff;
+  }
+
+
+@media (min-height: 768px) and (min-width: 992px) {
+  .settings {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar-dark .nav-item .nav-link i {
+    color: rgba(255, 255, 255, 1);
+  }
+}
