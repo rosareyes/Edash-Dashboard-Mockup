@@ -729,6 +729,9 @@ body {
   .login-form h3 {
     font-size: 1.5rem;
   }
+  .chart {
+    padding: 10px;
+  }
 }
 
 input.is-invalid {
@@ -866,6 +869,7 @@ font-size: 10px;
     .content-wrapper {
       display: block;
     }
+
   }
 
   @media (max-width: 320px) {
