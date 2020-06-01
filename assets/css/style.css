@@ -628,3 +628,21 @@ input.is-invalid {
     border-color: transparent;
     color: #fff;
 }
+
+/* Sidebar active icon */
+
+.sidebar__active-icon {
+  width: 18px;
+  height: 36px;
+  margin-right: 0;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  .sidebar__active-icon {
+    display: none;
+  }
+}

@@ -1,5 +1,24 @@
 
 $(document).ready(function() {
+  //This is for setting dynamically the active class to sidebar links
+      var url = window.location.href;
+      var url = url.split("/").pop();
+       console.log(url);
+       $('ul.navbar-nav a[href="'+ url +'"]').parent().addClass('active');
+       $('ul.navbar-nav a').filter(function() {
+            return this.href == url;
+       }).parent().addClass('active');
+
+
+
+  //This is for showing the icon of the active sidebar link depending if it has the active class or not (the active class has to be added to the link of the current page)
+
+  if ($(".nav-item.active img").hasClass("inactive")) {
+    $(".nav-item.active img").removeClass("inactive");
+  }
+  if (!$(".nav-item img").hasClass("inactive")) {
+    $(".nav-item.active img").addClass("inactive");
+  }
 
 //This is a client side validation for the register page, to check if both passwords are similar.
 //I'm using "is-invalid" and "is-valid" bootstrap classes with some modifications.
@@ -24,7 +43,6 @@ $(document).ready(function() {
 });
 
 $("#more").click(function () {
-
 //This function is intented to be used for mobile menu version, showing the "more menu" when the user clics on it, and disabling the page content and viceversa.
   if ($("#page-more").hasClass("active")) {
     $("#page-more").removeClass("active");
