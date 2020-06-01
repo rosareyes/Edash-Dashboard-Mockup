@@ -4,6 +4,9 @@ $(document).ready(function() {
       var url = window.location.href;
       var url = url.split("/").pop();
        console.log(url);
+       if (!url) {
+         return;
+       }
        $('ul.navbar-nav a[href="'+ url +'"]').parent().addClass('active');
        $('ul.navbar-nav a').filter(function() {
             return this.href == url;
