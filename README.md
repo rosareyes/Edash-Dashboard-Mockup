@@ -1,6 +1,6 @@
 # Edash-Dashboard-Mockup
 
-<h1>Mockup of a dashboard for an UpWork Client.</h1>
+<h2>Mockup of a dashboard for an UpWork Client.</h2>
 
 <b>Live link:</b> <a>https://edash-project.netlify.app/.</a>
 
