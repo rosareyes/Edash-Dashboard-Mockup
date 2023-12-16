@@ -10,7 +10,6 @@ Edash is a fully responsive dashboard template designed to provide a seamless us
 
 <img align='center' src='https://github.com/rosareyes/Edash-Dashboard-Mockup/assets/63470281/76719a7c-c9c7-4c7c-b19a-96ccb474a9fc' width='240px'>
 
-
 ## Features
 - **Responsive Layout**: Optimized for desktop and mobile.
 - **Interactive Charts**: Built with Chart.js for dynamic data representation.
@@ -23,6 +22,9 @@ Edash is a fully responsive dashboard template designed to provide a seamless us
 - JavaScript with jQuery
 - Chart.js for charts
 - Daterangepicker for date inputs
+
+## Client's feedback
+> ""Very honest. Super smart. Exceeded my expectations. Will hire again."" - 5/5 stars on Upwork
 
 ## Setup
 Clone the repository and navigate to the project directory. Open `index.html` in your browser to view the dashboard.
