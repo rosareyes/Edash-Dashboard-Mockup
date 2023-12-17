@@ -33,8 +33,9 @@ Clone the repository and navigate to the project directory. Open `index.html` in
 View a live demo of the dashboard [here](https://edash-project.netlify.app/).
 
 ## Repository
-Access the full source code on GitHub: [Edash-Dashboard-Mockup](https://github.com/rosareyes/Edash-Dashboard-Mockup/)
+Access the full source code: [Edash-Dashboard-Mockup](https://github.com/rosareyes/Edash-Dashboard-Mockup/)
 
 ## Contact
-
-Rosa Reyes: [LinkedIn](https://www.linkedin.com/in/rosaareyesc/)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rosaareyesc/)
+[![Upwork](https://img.shields.io/badge/UpWork-6FDA44?style=for-the-badge&logo=Upwork&logoColor=white)](https://www.upwork.com/freelancers/~01bcf3b51bb38b47a8)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rosareyes)
