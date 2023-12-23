@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://brooklyn-burger-web.vercel.app/">
+  <a href="https://edash-project.netlify.app/">
     <img src='https://github.com/rosareyes/Edash-Dashboard-Mockup/assets/63470281/8fe4bdc2-550d-4967-8fdc-4eec03dc01bd' width='600px'>
     <h1 align="center">Edash Dashboard Mockup</h1>
   </a>
